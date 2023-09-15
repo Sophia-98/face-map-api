@@ -12,13 +12,13 @@ const image = require('./controllers/image');
 const db = knex({
     client: 'pg',
     connection: {
-      connectionString: dpg-ck27h1g21fec73ceaj5g-a.frankfurt-postgres.render.com,
+      connectionString: 'dpg-ck27h1g21fec73ceaj5g-a.frankfurt-postgres.render.com',
       ssl: {rejectionUnauthorized: false},
-      host:  dpg-ck27h1g21fec73ceaj5g-a,
+      host:  'dpg-ck27h1g21fec73ceaj5g-a',
       port: 5432,
-      user: facerecogdb_zmh9_user,
-      password: Ld4rx3A3aviAgfYC6QeUGrL2TGVz3IbV,
-      database: facerecogdb_zmh9
+      user: 'facerecogdb_zmh9_user',
+      password: 'Ld4rx3A3aviAgfYC6QeUGrL2TGVz3IbV',
+      database: 'facerecogdb_zmh9'
     }
 });
 
