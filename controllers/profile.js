@@ -1,4 +1,4 @@
-const handleProfileGet = (req, res, db) => {
+export const handleProfileGet = (req, res, db) => {
     const { id } = req.params;
     let found = false;
     db.select('*').from('users').where({id})
@@ -14,4 +14,3 @@ const handleProfileGet = (req, res, db) => {
    
 }
 
-export default {handleProfileGet};
