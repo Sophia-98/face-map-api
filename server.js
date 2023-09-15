@@ -12,9 +12,9 @@ const image = require('./controllers/image');
 const db = knex({
     client: 'pg',
     connection: {
-      connectionString: 'dpg-ck27h1g21fec73ceaj5g-a.frankfurt-postgres.render.com',
+      connectionString: 'postgres://facerecogdb_zmh9_user:Ld4rx3A3aviAgfYC6QeUGrL2TGVz3IbV@dpg-ck27h1g21fec73ceaj5g-a/facerecogdb_zmh9',
       ssl: {rejectionUnauthorized: false},
-      host:  'dpg-ck27h1g21fec73ceaj5g-a',
+      host:  'dpg-ck27h1g21fec73ceaj5g-a.frankfurt-postgres.render.com',
       port: 5432,
       user: 'facerecogdb_zmh9_user',
       password: 'Ld4rx3A3aviAgfYC6QeUGrL2TGVz3IbV',
