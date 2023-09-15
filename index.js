@@ -8,7 +8,7 @@ import handleRegister from './controllers/register.js';
 import handleSignin from './controllers/signin.js';
 import handleProfileGet from './controllers/profile.js';
 import handleImage from './controllers/image.js';
-import { handleApiCall } from './controllers/image.js'; // Import handleApiCall
+
 
 
 const db = knex({
@@ -41,7 +41,7 @@ app.get('/profile/:id', (req, res) => {handleProfileGet(req, res, db)});
 
 app.put('/image', (req, res) => {handleImage(req, res, db)});
 
-app.post('/imageurl', (req, res) => {handleApiCall(req, res)});
+app.post('/imageurl', (req, res) => {handleImage.handleApiCall(req, res)});
 
 
 app.listen(process.env.PORT || 3000, ()=> {
