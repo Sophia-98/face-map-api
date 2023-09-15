@@ -80,4 +80,4 @@ const handleImage = (req, res, db) => {
     });
 }
 
-export {handleImage, handleApiCall};
+export default {handleImage, handleApiCall};
